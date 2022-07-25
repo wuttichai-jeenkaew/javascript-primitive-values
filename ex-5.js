@@ -1,4 +1,3 @@
-let totalPrice = 27000;
-let discount = 0.25;
+//Exercise #5: Shopping and Discount
 
-let discountPrice;
+// Start coding here
