@@ -1,4 +1,4 @@
-name: Send assignment submit result
+name: Send Repo Name
 
 on:
   push:
@@ -11,6 +11,7 @@ jobs:
 
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      AUTH_GITHUB_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
