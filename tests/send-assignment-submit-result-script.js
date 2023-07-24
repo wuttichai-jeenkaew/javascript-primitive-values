@@ -74,6 +74,7 @@ async function sendAssignmentSubmitResult(repoName) {
     }
   } catch (error) {
     console.error("Error:", error);
+    throw error;
   } finally {
     pool.end();
   }

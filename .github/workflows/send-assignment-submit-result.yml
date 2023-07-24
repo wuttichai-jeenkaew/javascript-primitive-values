@@ -11,7 +11,6 @@ jobs:
 
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      AUTH_GITHUB_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
@@ -26,4 +25,10 @@ jobs:
         run: npm ci
 
       - name: Send assignment submit result to SQL Database
-        run: node ./tests/send-assignment-submit-result-script.js ${{ github.repository }}
+        uses: nick-fields/retry@v2
+        with:
+          max_attempts: 3
+          retry_on: error
+          timeout_seconds: 5
+          command: | 
+            node ./tests/send-assignment-submit-result-script.js ${{ github.repository }}
