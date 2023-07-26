@@ -8,8 +8,4 @@ on:
 jobs:
   send-assignment-submit-result:
     uses: techupth/techupth-workflows/.github/workflows/send-assignment-submit-result-template.yml@main
-<<<<<<< HEAD
     secrets: inherit
-=======
-    secrets: inherit
->>>>>>> 62884695ce3a7e63d6eddb2f659a1a23fd67426a
