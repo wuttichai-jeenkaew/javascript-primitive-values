@@ -5,4 +5,8 @@ on:
       - v1.**
 jobs:
   checker-template:
+<<<<<<< HEAD
     uses: techupth/techupth-workflows/.github/workflows/checker-template.yml@main
+=======
+    uses: techupth/techupth-workflows/.github/workflows/checker-template.yml@main
+>>>>>>> 62884695ce3a7e63d6eddb2f659a1a23fd67426a
