@@ -8,6 +8,6 @@ describe("exercise 3: primitive values tests cases", () => {
     const func = new Function(code);
     const result = func();
 
-    expect(result === 12 || result === "12%").toBe(false);
+    expect(result === 12 || result === "12%").toBe(true);
   });
 });

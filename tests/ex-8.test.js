@@ -15,7 +15,7 @@ describe("exercise 8: primitive values tests cases", () => {
     const code = `${data} return article`;
     const func = new Function(code);
 
-    const result = func();
+    const result = func(code);
 
     expect(result).toBe(
       `${firstParagraph}\n${secondParagraph}\n${thirdParagraph}`

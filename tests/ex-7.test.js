@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 
 describe("exercise 7: primitive values tests cases", () => {
-  test("exercise 7: จะต้อง sentence ค่าให้ article อย่างถูกต้องตามหลักการทำ String Concatenation", async () => {
+  test("exercise 7: sentence จะต้องถูก reassign ค่าให้อย่างถูกต้องตามหลักการทำ String Concatenation", async () => {
     const data = await fs.readFile("./ex-7.js");
     const subject = "I";
     const verb = "am";
