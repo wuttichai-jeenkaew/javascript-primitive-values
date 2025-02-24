@@ -9,4 +9,7 @@ let secondParagraph =
 let thirdParagraph =
   "It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare.";
 // Start coding here
-let article;
+let article = firstParagraph + "\n\n" + secondParagraph + "\n\n" + thirdParagraph;
+
+article
+console.log(article)
